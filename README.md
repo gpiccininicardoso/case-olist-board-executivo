@@ -19,7 +19,7 @@
 
 ### 1. Um pedido atrasado transforma cliente satisfeito em detrator: a satisfação líquida vai de +53 para −45
 
-![Nota média conforme os dias de atraso](figuras/achado1_atraso_satisfacao.png)
+![Nota média conforme os dias de atraso](achado1_atraso_satisfacao.png)
 
 A cada dia de atraso, a nota média cai **0,26 ponto**. Entre os pedidos atrasados, 62% recebem nota 1 ou 2, contra 9% dos entregues no prazo.
 
@@ -27,7 +27,7 @@ A cada dia de atraso, a nota média cai **0,26 ponto**. Entre os pedidos atrasad
 
 ### 2. No Nordeste, o transporte leva 17 dias, mais que o dobro do Sudeste, embora o vendedor poste no mesmo prazo
 
-![Dias de aprovação, postagem e transporte por região](figuras/achado2_transporte_regiao.png)
+![Dias de aprovação, postagem e transporte por região](achado2_transporte_regiao.png)
 
 O vendedor posta em 2,8 dias em todas as regiões; a diferença está no transporte, que responde por 83% do tempo de entrega no Nordeste. Apenas 4,6% dos itens comprados na região são vendidos por vendedores locais.
 
@@ -37,7 +37,7 @@ O vendedor posta em 2,8 dias em todas as regiões; a diferença está no transpo
 
 ### 3. Pedidos acima de R$ 200 são 20% das vendas, mas geram 53% da receita
 
-![Participação das faixas de valor nos pedidos e na receita](figuras/achado3_receita_faixa_valor.png)
+![Participação das faixas de valor nos pedidos e na receita](achado3_receita_faixa_valor.png)
 
 71% desses pedidos são parcelados no cartão; acima de R$ 500, 92% são parcelados, com média de 7 parcelas.
 
@@ -45,22 +45,15 @@ O vendedor posta em 2,8 dias em todas as regiões; a diferença está no transpo
 
 ---
 
-## Estrutura do repositório
+## Arquivos do repositório
 
-```
-case-olist-board-executivo/
-├── README.md
-├── notebooks/
-│   ├── 01_preparacao_dados.ipynb      # junção das 9 tabelas, tratamento e variáveis derivadas
-│   └── 02_analise_exploratoria.ipynb  # 4 hipóteses testadas (3 confirmadas, 1 refutada)
-├── docs/
-│   ├── 01_Mapa_de_Indicadores.pdf
-│   ├── 02_Preparacao_dos_Dados.pdf
-│   ├── 03_Hipoteses_Testadas.pdf
-│   ├── 04_Achados_Prioritarios.pdf
-│   └── 05_Board_Executivo.pdf
-└── figuras/                           # gráficos usados no board e neste README
-```
+| Tipo | Arquivos |
+|---|---|
+| Board e entregáveis (PDF) | [05_Board_Executivo.pdf](05_Board_Executivo.pdf) · [01_Mapa_de_Indicadores.pdf](01_Mapa_de_Indicadores.pdf) · [02_Preparacao_dos_Dados.pdf](02_Preparacao_dos_Dados.pdf) · [03_Hipoteses_Testadas.pdf](03_Hipoteses_Testadas.pdf) · [04_Achados_Prioritarios.pdf](04_Achados_Prioritarios.pdf) |
+| Notebooks reproduzíveis | [01_preparacao_dados.ipynb](01_preparacao_dados.ipynb) (junção das 9 tabelas, tratamento e variáveis derivadas) · [02_analise_exploratoria.ipynb](02_analise_exploratoria.ipynb) (4 hipóteses testadas) |
+| Gráficos | Arquivos `.png` usados no board e neste README |
+
+**Comece pelo [board executivo](05_Board_Executivo.pdf):** são 7 slides com as respostas às três perguntas do CEO.
 
 ## Como rodar
 
